@@ -3,8 +3,8 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
 
-hr_features = pd.read_csv("npb_ht.csv")
-hr_target = pd.read_csv("npb_htr.csv")
+hr_features = pd.read_csv("csvfiles/npb_ht.csv")
+hr_target = pd.read_csv("csvfiles/npb_htr.csv")
 
 x_train, x_test, y_train, y_test = train_test_split(hr_features, hr_target, test_size =0.25, random_state=0)
 
